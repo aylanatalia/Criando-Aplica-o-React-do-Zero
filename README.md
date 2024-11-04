@@ -41,3 +41,26 @@ yarn add react react-dom -D
 
 Após isso iremos fazer a criação da pasta `public`, onde termos nosso `index.html` que terá nossas meta informações da aplicação, e também criaremos a pasta `src` onde configuraremos os arquivos `App.js` e `Index.js`.
 Ai já conseguiremos aplicar nosso `yarn start` para rodar nosso servidor.
+
+## Eslint:
+
+O Eslint, serve para auxiliar realizando correções em nosso código, para aplicarmos no nosso programa, devemos rodar no terminal:
+
+```
+npx eslint --init  
+yarn add eslint -D 
+```
+
+com isso será criado nosso arquivo `eslint.config.mjs`.
+
+## Prettier:
+
+O prettier serve para criarmos uma padronização no nosso código para que farcilite a manutenção de nossa aplicação dentro de uma equipe. Para configurá-lo, alem de o adicionar no nosso arquivo eslint, devemos criar o arquivo `.prettierrc` e também rodar no terminal o seguinte código:
+
+```
+yarn add eslint-config-prettier eslint-plugin-prettier prettier -D
+```
+
+## EditorConfig:
+
+Já o nosso EditorConfig serve para criar uma padronização entre os nossos editores, sendo acessível para diversas IDE. Para configurá-lo, basta criarmos o arquivo `.editorconfig` onde iremos colocar nossas regras de padronização.
